@@ -24,24 +24,26 @@ class ViewController: UIViewController {
         
         
         //instanciado Tiger
-        var miTigreton = Tiger()
-        miTigreton.name = "Boby"
-        miTigreton.age  = 3
-        miTigreton.breed = "Bengala"
-        miTigreton.image = UIImage(named:"BengalTiger.jpg")
+        var myTiger = Tiger()
+        myTiger.name = "Boby"
+        myTiger.age  = 3
+        myTiger.breed = "Bengala"
+        myTiger.image = UIImage(named:"BengalTiger.jpg")
+        myTiger.age = myTiger.ageInTigerYearsFromAge(myTiger.age);
         
-        miTigreton.chuff();
-        miTigreton.chuffANumberOfTimes(3);
+        myTiger.chuff();
+        //miTigreton.chuffANumberOfTimes(3);
+        myTiger.chuffANumberOfTimes(5, isLoud: false)
         
-        self.myTigers.append(miTigreton)
+        self.myTigers.append(myTiger)
         
         //println("My Tiger's name is: \(miTigreton.name), it's age is \(miTigreton.age), its' breed is \(miTigreton.breed), and the image is \(miTigreton.image)")
 
         //asignando la estructura tigre a nuestra view
-        self.myImageView.image = miTigreton.image
-        self.nameLabel.text = miTigreton.name
-        self.ageLabel.text = "\(miTigreton.age)"
-        self.breedLabel.text = miTigreton.breed
+        self.myImageView.image = myTiger.image
+        self.nameLabel.text = myTiger.name
+        self.ageLabel.text = "\(myTiger.age)"
+        self.breedLabel.text = myTiger.breed
         
         //mas tigretones!
         var secondTiger = Tiger()
@@ -49,6 +51,7 @@ class ViewController: UIViewController {
         secondTiger.breed = "Indochinese Tiger"
         secondTiger.age = 2
         secondTiger.image = UIImage(named:"IndochineseTiger.jpg")
+        secondTiger.age = secondTiger.ageInTigerYearsFromAge(secondTiger.age)
         
         secondTiger.chuff();
         secondTiger.chuffANumberOfTimes(2)
@@ -58,12 +61,15 @@ class ViewController: UIViewController {
         thirdTiger.breed = "Malayan Tiger"
         thirdTiger.age = 4
         thirdTiger.image = UIImage(named:"MalayanTiger.jpg")
+        thirdTiger.age = thirdTiger.ageInTigerYearsFromAge(thirdTiger.age)
         
         var fourthTiger = Tiger()
         fourthTiger.name = "Spar"
         fourthTiger.breed = "Siberian Tiger"
         fourthTiger.age = 5
         fourthTiger.image = UIImage(named:"SiberianTiger.jpg")
+        fourthTiger.age = fourthTiger.ageInTigerYearsFromAge(fourthTiger.age)
+        
         
         self.myTigers += [secondTiger, thirdTiger, fourthTiger]
         
