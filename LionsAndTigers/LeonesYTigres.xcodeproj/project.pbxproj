@@ -22,6 +22,7 @@
 		554744C91A363BCA000B1F1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554744C81A363BCA000B1F1E /* Images.xcassets */; };
 		554744CC1A363BCA000B1F1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554744CA1A363BCA000B1F1E /* LaunchScreen.xib */; };
 		554744D81A363BCA000B1F1E /* LeonesYTigresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554744D71A363BCA000B1F1E /* LeonesYTigresTests.swift */; };
+		555963131A59DCE700767CF0 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555963121A59DCE700767CF0 /* Lion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		554744D11A363BCA000B1F1E /* LeonesYTigresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeonesYTigresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554744D61A363BCA000B1F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554744D71A363BCA000B1F1E /* LeonesYTigresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeonesYTigresTests.swift; sourceTree = "<group>"; };
+		555963121A59DCE700767CF0 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				554744C51A363BCA000B1F1E /* Main.storyboard */,
+				555963111A59DC5800767CF0 /* Classes */,
 				550C91611A363DC40086340F /* Estructura */,
 				554744E11A363C0D000B1F1E /* Resources */,
 				554744C11A363BCA000B1F1E /* AppDelegate.swift */,
@@ -153,6 +156,14 @@
 				550C91641A363E810086340F /* BengalTiger.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		555963111A59DC5800767CF0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				555963121A59DCE700767CF0 /* Lion.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				554744C41A363BCA000B1F1E /* ViewController.swift in Sources */,
 				550C91631A363DD00086340F /* Tiger.swift in Sources */,
 				554744C21A363BCA000B1F1E /* AppDelegate.swift in Sources */,
+				555963131A59DCE700767CF0 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
