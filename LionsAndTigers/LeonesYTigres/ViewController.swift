@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         myTiger.image = UIImage(named:"BengalTiger.jpg")
         myTiger.age = myTiger.ageInTigerYearsFromAge(myTiger.age);
         
-        myTiger.chuff();
+        //myTiger.chuff();
         //miTigreton.chuffANumberOfTimes(3);
-        myTiger.chuffANumberOfTimes(5, isLoud: false)
+        //myTiger.chuffANumberOfTimes(5, isLoud: false)
         
         self.myTigers.append(myTiger)
         
@@ -63,8 +63,8 @@ class ViewController: UIViewController {
         secondTiger.image = UIImage(named:"IndochineseTiger.jpg")
         secondTiger.age = secondTiger.ageInTigerYearsFromAge(secondTiger.age)
         
-        secondTiger.chuff();
-        secondTiger.chuffANumberOfTimes(2)
+        //secondTiger.chuff();
+        //secondTiger.chuffANumberOfTimes(2)
         
         var thirdTiger = Tiger()
         thirdTiger.name = "Jacob"
@@ -99,6 +99,10 @@ class ViewController: UIViewController {
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
         
+        // call the roar() function
+        lion.roar()
+        lioness.roar()
+        
         self.lions += [lion, lioness]
         
     }
@@ -110,7 +114,6 @@ class ViewController: UIViewController {
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem)
     {
-        
         updateAnimal()
         updateView()
     }
@@ -118,9 +121,7 @@ class ViewController: UIViewController {
      will use a Switch statement on our Tuple property. We can use an underscore because we don't need the index to switch between Lions and Tigers. Next, we generate a randomIndex based on the count of either the lion or tiger array. Finally, we update the tuple with the current index and the current species.
     */
     func updateAnimal (){
-        
-        println(currentAnimal);
-        
+                
         switch currentAnimal {
         case ("Tiger", _) :
             let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
