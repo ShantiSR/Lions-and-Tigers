@@ -16,8 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet var breedLabel: UILabel!
     @IBOutlet weak var randomFactLabel: UILabel!
     
+    // Create a Tiger Array
     var myTigers:[Tiger] = []
     var currentIndex = 0
+    
+    // Create a Lion Array
+    var lions: [Lion] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +94,8 @@ class ViewController: UIViewController {
         lioness.image = UIImage(named: "Lioness.jpeg")
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
+        
+        self.lions += [lion, lioness]
         
     }
 
