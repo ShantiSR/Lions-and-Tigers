@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     // Create a Lion Array
     var lions: [Lion] = []
     
+    
+    var currentAnimal = (species: "Tiger", index : 0)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -107,30 +111,50 @@ class ViewController: UIViewController {
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem)
     {
         
-        //obteniendo un tigre de manera aleatoria
-        var randomIndex: Int
+        updateAnimal()
+        updateView()
+    }
+    /*
+     will use a Switch statement on our Tuple property. We can use an underscore because we don't need the index to switch between Lions and Tigers. Next, we generate a randomIndex based on the count of either the lion or tiger array. Finally, we update the tuple with the current index and the current species.
+    */
+    func updateAnimal (){
         
-        do {
-            randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
-        } while currentIndex == randomIndex
+        println(currentAnimal);
         
-        self.currentIndex = randomIndex
+        switch currentAnimal {
+        case ("Tiger", _) :
+            let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
+            currentAnimal = ("Lion", randomIndex)
+        default :
+            let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            currentAnimal = ("Tiger", randomIndex)
+        }
+    }
+    
+    func updateView () {
         
-        let tiger = self.myTigers[currentIndex]
-
-        //Un poco de animación
-        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations:
-            {
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            
+            if self.currentAnimal.species == "Tiger" {
+                let tiger = self.myTigers[self.currentAnimal.index]
                 self.myImageView.image = tiger.image
-                self.nameLabel.text = tiger.name
-                self.ageLabel.text = "\(tiger.age)"
                 self.breedLabel.text = tiger.breed
+                self.ageLabel.text = "\(tiger.age)"
+                self.nameLabel.text = tiger.name
                 self.randomFactLabel.text = tiger.randomFact()
-                
-            }, completion: { (finished: Bool) -> () in
+            }
+            else if self.currentAnimal.species == "Lion" {
+                let lion = self.lions[self.currentAnimal.index]
+                self.myImageView.image = lion.image
+                self.breedLabel.text = lion.subspecies
+                self.ageLabel.text = "\(lion.age)"
+                self.nameLabel.text = lion.name
+            }
+            self.randomFactLabel.hidden = false
+            }, completion: {
+                (finished: Bool) -> () in
         })
     }
-
 
 }
 
