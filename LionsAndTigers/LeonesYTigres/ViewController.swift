@@ -115,7 +115,9 @@ class ViewController: UIViewController {
         lionCub.name = "Simba"
         lionCub.image = UIImage(named: "LionCub1.jpg")
         lionCub.subspecies = "Masai"
+
         lionCub.roar()
+        lionCub.rubLionCubsBelly()
         
     }
 

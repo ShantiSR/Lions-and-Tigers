@@ -12,4 +12,12 @@ import Foundation
 
 class LionCub: Lion {
     
+    func rubLionCubsBelly () {
+        println("LionCub: Snuggle and be happy")
+    }
+    // We can now override the function roar declared in the Lion class. When we call roar on a LionCub instance, it will print "Growl Growl"
+    override func roar () {
+        println("LionCub: Growl Growl")
+    }
+    
 }
