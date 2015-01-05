@@ -103,6 +103,9 @@ class ViewController: UIViewController {
         lion.roar()
         lioness.roar()
         
+        lion.changeToAlphaMale()
+        println(lion.isAlphaMale)
+        
         self.lions += [lion, lioness]
         
     }
@@ -121,7 +124,7 @@ class ViewController: UIViewController {
      will use a Switch statement on our Tuple property. We can use an underscore because we don't need the index to switch between Lions and Tigers. Next, we generate a randomIndex based on the count of either the lion or tiger array. Finally, we update the tuple with the current index and the current species.
     */
     func updateAnimal (){
-                
+        
         switch currentAnimal {
         case ("Tiger", _) :
             let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
