@@ -5,3 +5,5 @@ Lions and Tigers (Swift)
 * Struct.
 * Classes.
 * Tuples.
+* Subclass.
+* 
