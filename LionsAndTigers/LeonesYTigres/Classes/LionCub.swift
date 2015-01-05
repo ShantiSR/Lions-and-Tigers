@@ -23,4 +23,18 @@ class LionCub: Lion {
         println("LionCub: Growl Growl")
     }
     
+    // We need to create a helper function in the LionCub class to generate a random fact. We use the override keyword to replace the randomFactString, with a new implementation for our LionCubs.
+    
+    override func randomFact() -> String {
+        var randomFactString:String
+        
+        if isAlphaMale {
+            randomFactString = "Cubs are usually hidden in the dense bush for approximately six weeks."
+        }
+        else {
+            randomFactString = "Cubs begin eating meat at about the age of six weeks"
+        }
+        return randomFactString
+    }
+    
 }

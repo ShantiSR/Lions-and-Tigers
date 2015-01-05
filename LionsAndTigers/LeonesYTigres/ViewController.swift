@@ -23,8 +23,10 @@ class ViewController: UIViewController {
     // Create a Lion Array
     var lions: [Lion] = []
     
-    
     var currentAnimal = (species: "Tiger", index : 0)
+    
+    // Create a LionCub Array
+    var lionCubs: [LionCub] = []
     
     
     override func viewDidLoad() {
@@ -115,9 +117,20 @@ class ViewController: UIViewController {
         lionCub.name = "Simba"
         lionCub.image = UIImage(named: "LionCub1.jpg")
         lionCub.subspecies = "Masai"
+        lionCub.isAlphaMale = true
 
         lionCub.roar()
         lionCub.rubLionCubsBelly()
+        
+        // Female Lion Cub
+        var femaleLionCub = LionCub()
+        femaleLionCub.age = 1
+        femaleLionCub.name = "Nala"
+        femaleLionCub.image = UIImage(named: "LionCub2.jpeg")
+        femaleLionCub.subspecies = "Transvaal"
+        femaleLionCub.isAlphaMale = false
+        
+        self.lionCubs += [lionCub, femaleLionCub]
         
     }
 
