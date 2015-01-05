@@ -108,6 +108,15 @@ class ViewController: UIViewController {
         
         self.lions += [lion, lioness]
         
+        // Subclass the Lion Class
+        // Notice that we get access to the properties and functions declared in the Lion Class.
+        var lionCub = LionCub()
+        lionCub.age = 1
+        lionCub.name = "Simba"
+        lionCub.image = UIImage(named: "LionCub1.jpg")
+        lionCub.subspecies = "Masai"
+        lionCub.roar()
+        
     }
 
     override func didReceiveMemoryWarning() {

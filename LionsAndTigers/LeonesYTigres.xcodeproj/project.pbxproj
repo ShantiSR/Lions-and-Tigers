@@ -16,6 +16,7 @@
 		550C91711A363EE90086340F /* Lioness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 550C916A1A363EE90086340F /* Lioness.jpeg */; };
 		550C91721A363EE90086340F /* MalayanTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 550C916B1A363EE90086340F /* MalayanTiger.jpg */; };
 		550C91731A363EE90086340F /* SiberianTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 550C916C1A363EE90086340F /* SiberianTiger.jpg */; };
+		55347D771A5B168E000F987D /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55347D761A5B168E000F987D /* LionCub.swift */; };
 		554744C21A363BCA000B1F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554744C11A363BCA000B1F1E /* AppDelegate.swift */; };
 		554744C41A363BCA000B1F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554744C31A363BCA000B1F1E /* ViewController.swift */; };
 		554744C71A363BCA000B1F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554744C51A363BCA000B1F1E /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		550C916A1A363EE90086340F /* Lioness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lioness.jpeg; sourceTree = "<group>"; };
 		550C916B1A363EE90086340F /* MalayanTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MalayanTiger.jpg; sourceTree = "<group>"; };
 		550C916C1A363EE90086340F /* SiberianTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SiberianTiger.jpg; sourceTree = "<group>"; };
+		55347D761A5B168E000F987D /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCub.swift; sourceTree = "<group>"; };
 		554744BC1A363BCA000B1F1E /* LeonesYTigres.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeonesYTigres.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554744C01A363BCA000B1F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554744C11A363BCA000B1F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				554744C51A363BCA000B1F1E /* Main.storyboard */,
+				554744C11A363BCA000B1F1E /* AppDelegate.swift */,
 				555963111A59DC5800767CF0 /* Classes */,
 				550C91611A363DC40086340F /* Estructura */,
 				554744E11A363C0D000B1F1E /* Resources */,
-				554744C11A363BCA000B1F1E /* AppDelegate.swift */,
 				554744C31A363BCA000B1F1E /* ViewController.swift */,
 				554744C81A363BCA000B1F1E /* Images.xcassets */,
 				554744CA1A363BCA000B1F1E /* LaunchScreen.xib */,
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				555963121A59DCE700767CF0 /* Lion.swift */,
+				55347D761A5B168E000F987D /* LionCub.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				554744C41A363BCA000B1F1E /* ViewController.swift in Sources */,
 				550C91631A363DD00086340F /* Tiger.swift in Sources */,
 				554744C21A363BCA000B1F1E /* AppDelegate.swift in Sources */,
+				55347D771A5B168E000F987D /* LionCub.swift in Sources */,
 				555963131A59DCE700767CF0 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
